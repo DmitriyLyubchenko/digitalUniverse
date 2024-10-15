@@ -1,0 +1,187 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem; */
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.background-wrapper {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0; */
+  background-image: url(/blue_lines_digital_art_background_4k_hd_abstract.jpg);
+  transition: opacity 0.3s ease-out;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.background-wrapper.dark {
+  background-image: none;
+  background-color: #1a1c28;
+}
+
+/* html {overflow: hidden} */
+
+.services {
+  background: url("//res2.weblium.site/res/60c8bda3f1911800212f169f/60d1c9ebcec09000215bbdfe?nowebp") center center / contain no-repeat, linear-gradient(0deg, rgb(33, 40, 61) 0%, rgb(46, 62, 97) 100%);
+}
+
+.services-gradient {
+  background: linear-gradient(0deg, rgba(33, 40, 61, 0.92) 0%, rgba(46, 62, 97, 0.91) 100%);background: linear-gradient(0deg, #15151b 0%, #15151b 100%);opacity: 0.85;
+}
+
+svg {
+  width: 20%;
+}
+
+svg path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.11);
+  stroke-width: 3px;
+}
+
+div.form-box input, textarea {
+  background-color: #fff;
+}
+
+.text_1k0 {
+  position: relative;
+  max-width: 100%;
+  word-wrap: break-word
+}
+
+.main_header_logo{
+  max-width: 120px;
+  z-index: 999999;
+  position: relative;
+}
+
+hr.separator {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.unlock {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* https://www.youtube.com/watch?v=gAGcjlJyKk0&ab_channel=WebDevBasics */
+
+div.nav {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.burger-menu {
+  margin-top: 30%;
+  height: 50%;
+  width: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger-bar {
+  width: 2em;
+  height: 0.1em;
+  background-color: white;
+  border-radius: 0.5em;
+}
+
+.menu {
+  width: 100%;
+  height: 100vh;
+  /* var(--ui-dark-shade-color); */
+  background-color: #1a1c28;
+  position: absolute;
+  z-index: 999999;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
+.burger-bar.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(0.5em, 0.5em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(2) {
+  transform: scale(0.1);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+  transform: rotate(135deg) translate(-0.5em, 0.5em);
+  transition: ease-out 0.5s;
+}
+
+.burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+div.burger-menu:hover div.burger-bar {
+  background-color: rgba(255, 255, 255, 0.49);
+}
+
+a.terms-link:hover {
+  color: rgba(255, 255, 255, 0.49);
+}
