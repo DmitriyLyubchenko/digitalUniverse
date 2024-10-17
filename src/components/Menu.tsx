@@ -39,11 +39,12 @@ export default function Menu({isMobile, isMenuClicked, setIsMenuClicked}) {
   return (
     <>
         <Container fluid>
-            <Row>
+            <Row style={{marginTop: "50px", marginRight: "80px"}}>
                 <Col>
-                    <a href="/">
+                    {/* <a href="/">
                         <img src="Freedom_Solution_final_white.png" className="main_header_logo" />
-                    </a>
+                    </a> */}
+                    {/* <h1>$₮€</h1> */}
                 </Col>
                 {!isMobile && (<Col>
                     <Nav className='d-flex justify-content-end' defaultActiveKey="/#about">
@@ -83,7 +84,7 @@ export default function Menu({isMobile, isMenuClicked, setIsMenuClicked}) {
                 <Nav.Link className='menu__link_2K2' href="/#services">Services</Nav.Link>
                 <Nav.Link className='menu__link_2K2' href="/#process">P2P Deal</Nav.Link>
                 <Nav.Link className='menu__link_2K2' href="/#termsofuse">Terms of Use</Nav.Link>
-                <Nav.Link className='menu__link_2K2' href="/#contacts">Contacts</Nav.Link>
+                <Nav.Link className='menu__link_2K2 mb-4' href="/#contacts">Contacts</Nav.Link>
                 <WriteUs/>
             </Nav>
         </Container>

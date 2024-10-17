@@ -13,7 +13,7 @@ export default function StagesSection() {
                         </h2>
                     </div>
                 </header>
-                <div class="w-section__content">
+                <div class="w-section__content" style={{padding: "1% 20% 5% 20%"}}>
                     <div data-columns-count="1" data-columns-inner-size="11" data-component="collection" data-collection-mode="collection" class="collection w-a5e8f34460cd41cdfd4ef4e7d651ab43 w-grid w-grid--collection w-grid--gap w-grid--left" data-items-count="6">
                         <div class="w-grid__inner">
                             <div class="w-grid__item w-grid__item--top w-text-left-xs w-text-left-sm w-text-left-md w-text-left collection__item__3b8Pa">

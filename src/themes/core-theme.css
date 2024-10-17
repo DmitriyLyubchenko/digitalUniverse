@@ -11025,14 +11025,14 @@ section div.w-section__inner {
     width: 100%
 }
 
-.menu__link_2K2 {
+a.menu__link_2K2 {
     position: relative;
     max-width: 100%;
-    color: var(--ui-block-title-color);
+    color: orange;
     line-height: normal;
-    font-size: var(--ui-text-size);
+    font-size: 24px;
     font-family: var(--ui-text-font-family);
-    font-weight: var(--ui-text-font-weight);
+    font-weight: 800;
     font-style: var(--ui-text-font-style)
   }
   
@@ -11040,11 +11040,11 @@ section div.w-section__inner {
     font-weight: 500;
   }
   
-  .menu__link_2K2:not(.submenu__link):not(:hover),
+  /* .menu__link_2K2:not(.submenu__link):not(:hover),
   .menu__link_2K2:not(.submenu__link):not(:hover)+.menu__item-triangle_22k,
   .menu__link_2K2.submenu__link:not(:hover) {
     color: rgba(255, 255, 255, 0.49);
-  }
+  } */
   
   .menu__link_2K2:not(.submenu__link):hover,
   .menu__link_2K2:not(.submenu__link):hover+.menu__item-triangle_22k,

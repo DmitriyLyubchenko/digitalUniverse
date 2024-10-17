@@ -16,7 +16,7 @@ export default function Footer() {
                                         <div class="w-grid__inner">
                                             <div class="w-grid__item w-grid__item--top">
                                                 <div class="w-grid__item-inner w-grid__item-panel w-text-left-xs w-text-left-sm w-text-left-md w-text-left w-088754deb0dd8820b733e12d9894218e">
-                                                    <p class="text_1k0 ui-small w-small ui-small--light" data-component="text"><span class="w-text-block "><span class="w-text-content"><span style={{color:"rgb(167,167,177)"}}>FREEDOM SOLUTION SPOLKA Z OGRANICZONA ODPOWIEDZIALNOSCIA<br/></span></span></span><span class="w-text-block "><span class="w-text-content"><span style={{color:"rgb(167,167,177)"}}>Join Freedom Solution today and discover the freedom and flexibility of P2P crypto trading. Experience seamless transactions, robust security measures, and unparalleled convenience all at your fingertips. </span></span></span></p>
+                                                    <p class="text_1k0 ui-small w-small ui-small--light" data-component="text"><span class="w-text-block "><span class="w-text-content"><span style={{color:"rgb(167,167,177)"}}>DIGITAL UNIVERSE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ<br/></span></span></span><span class="w-text-block "><span class="w-text-content"><span style={{color:"rgb(167,167,177)"}}>Join Digital Universe today and discover the freedom and flexibility of P2P crypto trading. Experience seamless transactions, robust security measures, and unparalleled convenience all at your fingertips. </span></span></span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -30,9 +30,9 @@ export default function Footer() {
                                 <div class="w-section__inner section__inner_16_" style={{paddingTop:"15px", paddingBottom:"15px"}}>
                                     <div class="horizontal-flow_CbY">
                                         <div class="horizontal-flow__section_2LL horizontal-flow__section--left_Ll6" style={{width:"33.3333%"}}>
-                                            <div class="horizontal-flow__section-inner_2xL">
+                                            {/* <div class="horizontal-flow__section-inner_2xL">
                                                 <a href="Terms and Conditions_FREEDOM SOLUTION.docx.pdf" target="_blank" class="text_1k0 ui-caption w-caption ui-caption--light terms-link" data-component="text"><span class="w-text-block"><span class="w-text-content">Terms and Conditions</span></span></a>
-                                            </div>
+                                            </div> */}
                                         </div>
                                         <div class="horizontal-flow__section_2LL horizontal-flow__section--center_134" style={{width:"33.3333%"}}>
                                             <div class="horizontal-flow__section-inner_2xL">

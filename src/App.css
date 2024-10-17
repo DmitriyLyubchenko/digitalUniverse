@@ -43,12 +43,6 @@
 }
 
 .background-wrapper {
-  /* position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0; */
   background-image: url(/blue_lines_digital_art_background_4k_hd_abstract.jpg);
   transition: opacity 0.3s ease-out;
   background-repeat: no-repeat;
@@ -71,6 +65,7 @@
 
 .services-gradient {
   background: linear-gradient(0deg, rgba(33, 40, 61, 0.92) 0%, rgba(46, 62, 97, 0.91) 100%);background: linear-gradient(0deg, #15151b 0%, #15151b 100%);opacity: 0.85;
+  padding-top: 50px;
 }
 
 svg {
@@ -85,6 +80,10 @@ svg path {
 
 div.form-box input, textarea {
   background-color: #fff;
+}
+
+div.form-box .form-button:hover {
+  background-color: forestgreen;
 }
 
 .text_1k0 {
@@ -108,7 +107,7 @@ hr.separator {
 
 .unlock {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -137,7 +136,7 @@ div.nav {
 .burger-bar {
   width: 2em;
   height: 0.1em;
-  background-color: white;
+  background-color: orange;
   border-radius: 0.5em;
 }
 
@@ -161,16 +160,19 @@ div.nav {
 .burger-bar.clicked:nth-child(1) {
   transform: rotate(45deg) translate(0.5em, 0.5em);
   transition: ease-out 0.5s;
+  background-color: white;
 }
 
 .burger-bar.clicked:nth-child(2) {
   transform: scale(0.1);
   transition: ease-out 0.5s;
+  background-color: white;
 }
 
 .burger-bar.clicked:nth-child(3) {
   transform: rotate(135deg) translate(-0.5em, 0.5em);
   transition: ease-out 0.5s;
+  background-color: white;
 }
 
 .burger-bar.unclicked {
