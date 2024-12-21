@@ -1,22 +1,28 @@
-import { useState, useEffect } from 'react';
-import { Container, Row, Col } from "react-grid";
+import { useState, useEffect, Dispatch, SetStateAction } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import WriteUs from './WriteUs';
 import '../App.css';
 
-export default function Menu({isMobile, isMenuClicked, setIsMenuClicked}) {
+interface IMenuProps {
+    isMobile: boolean, 
+    isMenuClicked: boolean, 
+    setIsMenuClicked: Dispatch<SetStateAction<boolean>>
+}
+
+export default function Menu(props: IMenuProps) {
     const [burger_class, setBurgerClass] = useState('burger-bar unclicked');
     const [menu_class, setMenuClass] = useState('menu hidden');
 
     const updateMenu = () => {
-        if (isMenuClicked) {
+        if (props.isMenuClicked) {
             closeMenu();
         }
         else {
             openMenu();
         }
     
-        setIsMenuClicked(!isMenuClicked);
+        props.setIsMenuClicked(!props.isMenuClicked);
       }
 
     const openMenu = () => {
@@ -30,23 +36,23 @@ export default function Menu({isMobile, isMenuClicked, setIsMenuClicked}) {
       }
 
       useEffect(() => {
-        if (!isMobile) {
+        if (!props.isMobile) {
             closeMenu();
-            setIsMenuClicked(false);
+            props.setIsMenuClicked(false);
         }
-      }, [isMobile]);
+      }, [props]);
 
   return (
     <>
         <Container fluid>
-            <Row style={{marginTop: "50px", marginRight: "80px"}}>
-                <Col>
+            <Row style={{marginTop: "40px", marginRight: "10px"}}>
+                <Col lg={4}>
                     {/* <a href="/">
                         <img src="Freedom_Solution_final_white.png" className="main_header_logo" />
                     </a> */}
                     {/* <h1>$₮€</h1> */}
                 </Col>
-                {!isMobile && (<Col>
+                {!props.isMobile && (<Col>
                     <Nav className='d-flex justify-content-end' defaultActiveKey="/#about">
                         <Nav.Item>
                             <Nav.Link className='menu__link_2K2' href="/#about">About us</Nav.Link>
@@ -65,7 +71,7 @@ export default function Menu({isMobile, isMenuClicked, setIsMenuClicked}) {
                         </Nav.Item>
                     </Nav>
                 </Col>)}
-                {isMobile && (<Col>
+                {props.isMobile && (<Col>
                     <Nav className='d-flex justify-content-end'>
                         <Nav.Item>
                             <div className='burger-menu' onClick={updateMenu}>

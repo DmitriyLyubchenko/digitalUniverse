@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-grid';
+import { Container, Row, Col } from 'react-bootstrap';
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import Menu from './components/Menu';
@@ -59,11 +59,9 @@ function App() {
                     At Digital Universe, we are dedicated to providing you with the ultimate experience in peer-to-peer (P2P) crypto exchanges. As a reputable leader in the industry, we offer P2P transactions via famous Crypto Exchange platforms. 
                     </span>
                 </p>
-                <p className='text_1k0 ui-text w-body ui-text--light'>
-                    <h4 className='w-text-block text-ui-brand-color'>
-                        Start trading with us and unlock the full potential of the crypto market!
-                    </h4>
-                </p>
+                <h4 className='w-text-block text-ui-brand-color'>
+                    Start trading with us and unlock the full potential of the crypto market!
+                </h4>
             </div>
         </section>
 
@@ -72,9 +70,9 @@ function App() {
             <Container fluid>
                 <Row className="mb-5">
                     <Col>
-                        <p class="text_1k0 ui-headingLg w-heading-lg ui-headingLg--light" data-component="text">
-                            <span class="w-text-content">
-                                <span class="text-ui-brand-color">—</span> Why Do We All Need P2P Cryptochange?</span>
+                        <p className="text_1k0 ui-headingLg w-heading-lg ui-headingLg--light" data-component="text">
+                            <span className="w-text-content">
+                                <span className="text-ui-brand-color">—</span> Why Do We All Need P2P Cryptochange?</span>
                         </p>
                     </Col>
                 </Row>
@@ -100,12 +98,12 @@ function App() {
             <div className='w-section__inner' id='about'>
             <Container fluid>
                 <Row>
-                    <Col>
-                        <h2 class="text_1k0 ui-blockTitle w-title ui-blockTitle--light" data-component="text">
-                            <span class="w-text-content">
-                                <span class="text-ui-brand-color">—</span> Why Choose Us for P2P Crypto Trading?</span>
+                    <Col lg={true} xs={12}>
+                        <h2 className="text_1k0 ui-blockTitle w-title ui-blockTitle--light" data-component="text">
+                            <span className="w-text-content">
+                                <span className="text-ui-brand-color">—</span> Why Choose Us for P2P Crypto Trading?</span>
                         </h2>
-                        <p class="text_1k0 ui-text w-body ui-text--light" data-component="text">
+                        <p className="text_1k0 ui-text w-body ui-text--light" data-component="text">
                             <span>
                                 <strong className="text-ui-brand-color">Authorized Expertise:</strong>
                                 <br/> Rest assured, we are duly authorized to facilitate exchanges between virtual currencies and fiat, as well as between various virtual currencies. Our track record speaks volumes about our commitment to compliance and regulatory standards.  </span>
@@ -116,12 +114,12 @@ function App() {
                             </span>
                         </p>
                     </Col>
-                    <Col>
-                        <div class="w-picture-wrapper media-wrapper_3VN">
-                            <picture class="w-picture ui-picture_2i5" style={{paddingTop:"88.25%"}} data-component="picture" data-images="[]" data-fallbackurl="60df03bb9350b9002126ed78_optimized" data-was-processed="true">
+                    <Col lg={true} xs={12}>
+                        <div className="w-picture-wrapper media-wrapper_3VN">
+                            <picture className="w-picture ui-picture_2i5" style={{paddingTop:"88.25%"}} data-component="picture" data-images="[]" data-fallbackurl="60df03bb9350b9002126ed78_optimized" data-was-processed="true">
                                 <img alt="Illustration" 
                                     data-fallback-url="60df03bb9350b9002126ed78_optimized" 
-                                    class="w-picture__image ui-image_3aJ w-ddcc310ab79db79b65faaa0013f426e1" 
+                                    className="w-picture__image ui-image_3aJ w-ddcc310ab79db79b65faaa0013f426e1" 
                                     src="https://i.pinimg.com/564x/3c/cd/31/3ccd311412316fef65e43b19aa611fb8.jpg"/>
                             </picture>
                         </div>
@@ -134,19 +132,19 @@ function App() {
             <div className='w-section__inner' id='services'>
                 <Container fluid>
                     <Row>
-                        <Col>
+                        <Col lg={true} xs={12}>
                             <ServiceColumn 
                                 icon='//res2.weblium.site/res/60c8bda3f1911800212f169f/60c99b9e8a8ec60022de4ee6'
                                 label='Real-Time Transactions'
                                 text='Experience the thrill of instant transactions with our cutting-edge P2P trading platform. Say goodbye to waiting times and seize opportunities as they arise.'/>
                         </Col>
-                        <Col>
+                        <Col lg={true} xs={12}>
                             <ServiceColumn 
                                 icon='//res2.weblium.site/res/60c8bda3f1911800212f169f/60c99b9e7afe1700211788f8'
                                 label='Top-Notch Security'
                                 text='Your safety is our priority. Partnering with established Crypto Exchange platforms means your assets are safeguarded by industry-leading security protocols, giving you peace of mind with every trade.'/>
                         </Col>
-                        <Col>
+                        <Col lg={true} xs={12}>
                             <ServiceColumn 
                                 icon='//res2.weblium.site/res/60c8bda3f1911800212f169f/60c99b9eb2468100226cf80f'
                                 label='Intuitive Interface'
@@ -159,28 +157,30 @@ function App() {
 
         <StagesSection/>
 
-        <section class="w-blocks-group-wrapper blocks-group-wrapper_2QF" style={{backgroundImage: "url(tonenisation.png)"}}>
+        <section className="w-blocks-group-wrapper blocks-group-wrapper_2QF" style={{backgroundImage: "url(tonenisation.png)"}}>
             <div id="contacts">
                 <Container fluid>
-                    <Row style={{padding: "3% 0"}}>
-                        <Col>
-                            <img alt="Illustration" 
-                                data-fallback-url="60df03bb9350b9002126ed78_optimized" 
-                                class="w-picture__image ui-image_3aJ w-ddcc310ab79db79b65faaa0013f426e1" 
-                                src="1600w-YyhnXDO96s8.png"/>
+                    <Row>
+                        <Col xs={12} lg={6} className="contacts-us-wrapper">
+                            <picture>
+                                <img alt="Illustration" 
+                                    data-fallback-url="60df03bb9350b9002126ed78_optimized" 
+                                    style={{width: "100%"}}
+                                    src="1600w-YyhnXDO96s8.png"/>
+                            </picture>
                         </Col>
-                        <Col>
-                            <div class="form" id="form">
-                                <div class="form-box thank">
-                                    <h2 class="text_1k0 ui-blockTitle w-title">Thank you!</h2>
-                                    <h3 class="w-contacts-list__body text_1k0 ui-text w-body">We will contact you soon</h3>
+                        <Col xs={12} lg={6} className="form-wrapper">
+                            <div className="form" id="form">
+                                <div className="form-box thank">
+                                    <h2 className="text_1k0 ui-blockTitle w-title">Thank you!</h2>
+                                    <h3 className="w-contacts-list__body text_1k0 ui-text w-body">We will contact you soon</h3>
                                 </div>
-                                <div class="form-box">
-                                    <input type="text" id="name-form" placeholder="Enter your full name" class="ui-text"/>
-                                    <input type="text" id="phone-form" placeholder="Enter your phone number" class="ui-text"/>
-                                    <input type="text" id="email-form" placeholder="Enter your email" class="ui-text"/>
-                                    <textarea id="message-form" name="story" rows="5" placeholder="Type your message" class="ui-text"/>
-                                    <div class="btn form-button" onclick="formSend(this)">Send message</div>
+                                <div className="form-box">
+                                    <input type="text" id="name-form" placeholder="Enter your full name" className="ui-text"/>
+                                    <input type="text" id="phone-form" placeholder="Enter your phone number" className="ui-text"/>
+                                    <input type="text" id="email-form" placeholder="Enter your email" className="ui-text"/>
+                                    <textarea id="message-form" name="story" rows={5} placeholder="Type your message" className="ui-text"/>
+                                    <div className="btn form-button">Send message</div>
                                 </div>
                             </div>
                         </Col>
